@@ -32,6 +32,7 @@
 | Healthcare | Reach Doctor | Dr.Ahlad | |
 | Healthcare | InfocusRx | Vishy  | http://vitreoshealth.com |
 | Healthcare | GasRelief.com | Vishy | http://www.gasrelief.com | |
+| Healthcare | DrNuv | Kuppu Krishnan and Vidya Subramanian | www.drnuv.com | 2014 |
 | E-Commerce | Techsquares | Naren Krishna | http://www.techsquares.com/ |
 | IT Services | Intellogi Global Solutions Pvt. Ltd. | Rajat Shahi | http://intellogi.com | 2013 |
 | Big Data | 3LOQ Labs | Anirudh Shah & Sunil Motaparti | http://3loq.com | 2014 |
