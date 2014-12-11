@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+  <title>
+    Startups in Hyderabad
+  </title>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <link rel="stylesheet" href="./fonts/BigJohn/styles.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="./fonts/SlimJoe/styles.css" media="screen" title="no title" charset="utf-8">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+  <script src="./jquery.filtertable.min.js"></script>
+  <style type="text/css">
+  .center{
+    text-align: center;
+  }
+  .container{
+    background:rgba(0,0,0,0.7);
+  }
+  /* generic table styling */
+  table { border-collapse: collapse; }
+  th, td { padding: 5px; }
+  th {
+    min-width: 150px;
+    font-family: "SlimJoe";
+    background-color: #333;
+    vertical-align: bottom; }
+
+  /* filter-table specific styling */
+  td.alt { background-color: rgba(255,255,255,0.3); color: #333; }
+  .container{
+    padding: 20px;
+  }
+
+  a.quick {
+    background: rgba(255,255,255,0.7);
+    color: black;
+    text-decoration: none;
+    margin: 0px 5px;
+    padding: 5px 10px;
+    border-radius: 5px 0px 5px 5px;
+  }
+
+  body{
+    color: white;
+    font: 90%/180% Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url("hyderabad.jpg");
+    bacground-repeat: no-repeat;
+    background-position: 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+  }
+  h1,h3,h4,h5,h6{
+    font-family: "BigJohn";
+  }
+  h2{
+    font-family: "SlimJoe";
+  }
+  h1.title{
+    margin-bottom: 1px;
+  }
+  h2.code{
+    font-family: monospace;
+    margin-top: 0px;
+  }
+  a{
+    color:#eee;
+  }
+  a:hover{
+    color:#fff;
+  }
+  /*
+  Max width before this PARTICULAR table gets nasty
+  This query will take effect for any screen smaller than 760px
+  and also iPads specifically.
+  */
+  @media
+  only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    tr{
+      border-bottom: 1px solid white;
+    }
+
+
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+
+    td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      font-family: "BigJohn";
+    }
+
+    /*
+    Label the data
+    */
+    td:nth-of-type(1):before { content: "Domain"; }
+    td:nth-of-type(2):before { content: "Name"; }
+    td:nth-of-type(3):before { content: "Founder(s)"; }
+    td:nth-of-type(4):before { content: "URL"; }
+    td:nth-of-type(5):before { content: "Year Founded"; }
+  }
+
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px) {
+    body {
+      padding: 0;
+      margin: 0;
+      width: 320px; }
+    }
+
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      body {
+        width: 495px;
+      }
+    }
+
+    input {
+      outline: none;
+    }
+    input[type=search] {
+      -webkit-appearance: textfield;
+      -webkit-box-sizing: content-box;
+      font-family: inherit;
+      font-size: 100%;
+    }
+    input::-webkit-search-decoration,
+    input::-webkit-search-cancel-button {
+      display: none;
+    }
+
+
+    input[type=search] {
+      background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+      border: solid 1px #ccc;
+      padding: 9px 10px 9px 32px;
+      width: 120px;
+
+      -webkit-border-radius: 10em;
+      -moz-border-radius: 10em;
+      border-radius: 10em;
+
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      transition: all .5s;
+    }
+    input[type=search]:focus {
+      width: 200px;
+      background-color: #fff;
+      border-color: #66CC75;
+
+      -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+      -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+      box-shadow: 0 0 5px rgba(109,207,246,.5);
+    }
+
+
+    input:-moz-placeholder {
+      color: #999;
+    }
+    input::-webkit-input-placeholder {
+      color: #999;
+    }
+
+    #input-filter {
+      display: block;
+      margin: 10px auto;
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="center">
+      <h1 class="title">Start-Ups</h1>
+      <h2 class="code"> &lt; hyderabad /&gt; </h2>
+      <div class="input-filter-container">
+        <input type="search" id="input-filter" size="15" placeholder="Search startups">
+      </div>
+    </div>
+    <div id="outputDiv"></div>
+  </div>
+  <script>
+  $.ajax({
+    url: "README.md",
+    context: document.body,
+    success: function(mdText){
+      $("#outputDiv").append(marked(mdText)); //append this to a div with class outputDiv
+      $('#outputDiv table').filterTable({
+        inputSelector: '#input-filter',
+        quickList: ['Technology', 'Healthcare', 'Local Search', 'Education', 'Healthcare', 'Big Data']
+      });
+      $("#outputDiv li a").each(function(){
+        var href = $(this).attr("href")
+        $(this).after(" <span>("+ href+ ")</span>");
+      });
+
+    }
+  });
+
+</script>
+
+
+</body>
+</html>
