@@ -1,7 +1,7 @@
 
 #### This is a list of all startups in Hyderabad.
 
-[Request](https://github.com/startupbyx/startups-hyderabad/issues/new) to add your startup. If you are based on hyderabad.
+[Request](https://github.com/startupsouls/hyderabad/issues/new) to add your startup. If you are based on hyderabad.
 
 | Domain  | Name | Founder(s) | URL | Year Founded |
 | :------- | :---- | :---- | :---- | :--- |
@@ -42,4 +42,4 @@
 
 #Contributing
 
-Know any good startup in hyderabad? [Fork this repo](https://github.com/startupbyx/startups-hyderabad) and send a pull request.
+Know any good startup in hyderabad? [Fork this repo](https://github.com/startupsouls/hyderabad) and send a pull request.
