@@ -38,7 +38,7 @@
 | Big Data | 3LOQ Labs | Anirudh Shah & Sunil Motaparti | http://3loq.com | 2014 |
 | Technology | HackMania | Rajat Shahi| http://hackmania.in | 2014 |
 | Local Search | Adzda | Kasi Bathina| http://adzda.com | 2014
-| Media & Marketing | Wowcards | [Sunday Team](https://www.facebook.com/thesundayteam) | wowcards.in | 2013 | 
+| Media & Marketing | Wowcards | [Sunday Team](https://www.facebook.com/thesundayteam) | http://wowcards.in | 2013 | 
 
 
 #Contributing
