@@ -21,6 +21,7 @@
 | E-Commerce | Imaginate (ecommerce tech) | Hemant S | |
 | Education |   Kaddy Analytics |Naveen C & Team | http://www.kaddy.co | |
 | Education |   Educe Learning |Koteshwar Rao | http://Educe.org |2012 |
+| Education | OnMyMobile | Lekha | http://onmymobile.co/ |2014 |
 | Education |   Vaave |Paresh Masade & Team | http://www.vaave.com |2008 |
 | Healthcare |   Entirx technologies |Pranav & Team | http://www.bookmylab.in | |
 | Healthcare | eKinCare | Kiran Kalakuntla | |
